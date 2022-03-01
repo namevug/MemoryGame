@@ -1,0 +1,112 @@
+/* timer */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #111;
+}
+
+.max-width {
+    /* position: absolute; */
+    top: 20px;
+    left: 800px;
+    max-width: 500px;
+    width: 300px;
+    height: 180px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    font-family: 'Arial';
+    font-size: 1.1em;
+    transition: all .5s;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: #a74300;
+}
+
+button:active {
+    background-color: #111;
+}
+
+.bg-green {
+    background-color: rgba(253, 172, 97, 0.933);
+}
+
+.bg-yellow {
+    background-color: rgba(253, 172, 97, 0.933);
+}
+
+.bg-red {
+    background-color: rgba(253, 172, 97, 0.933);
+}
+
+/* memória */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;  
+    display: flex;
+    background: #ff6600;
+}
+
+#cardboard {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: 33%;
+    margin: 5px;
+    transform-style: preserve-3d;
+    transition: 0.3s;
+    position: relative;
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}    
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    position: absolute;
+    backface-visibility: hidden; /* linha de ajuda discord rocket */
+    background: rgba(253, 172, 97, 0.933);   
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
